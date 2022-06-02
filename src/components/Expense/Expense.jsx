@@ -5,7 +5,7 @@ import ExpenseItem from "../ExpenseItem/expenseItem";
 
 function Expense(props) {
   return (
-    <>
+    <div className="expenses">
       <ExpenseItem
         title={props.item[0].title}
         amount={props.item[0].amount}
@@ -23,7 +23,7 @@ function Expense(props) {
         amount={props.item[2].amount}
         date={props.item[2].date}
       />
-    </>
+    </div>
   );
 }
 
