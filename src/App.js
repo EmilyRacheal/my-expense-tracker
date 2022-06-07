@@ -2,6 +2,7 @@ import "./App.css";
 
 import { useState } from "react";
 import Expense from "./components/Expense/Expense.jsx";
+import NewExpense from "./components/NewExpense/newExpense";
 
 const App = () => {
   const expense = [
@@ -24,6 +25,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <NewExpense />
       <Expense item={expense} />
     </div>
   );
